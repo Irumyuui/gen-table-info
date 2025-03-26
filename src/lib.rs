@@ -1,3 +1,5 @@
+pub use gen_table_info_derive::TableInfo;
+
 pub mod prelude {
     pub use crate::Entry;
     pub use crate::StructCommentBuilder;
@@ -7,7 +9,7 @@ pub mod prelude {
 ///
 /// ```rust
 /// use gen_table_info::prelude::*;
-/// 
+///
 /// Entry::with_name("key").with_type("String");
 /// ```
 pub struct Entry {
@@ -19,7 +21,7 @@ pub struct Entry {
 ///
 /// ```rust
 /// use gen_table_info::prelude::*;
-/// 
+///
 /// StructCommentBuilder::new()
 ///     .add_entry(Entry::with_name("key").with_type("String"))
 ///     .add_entry(Entry::with_name("value").with_type("(String, String, String)"))

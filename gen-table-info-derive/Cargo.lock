@@ -3,13 +3,6 @@
 version = 4
 
 [[package]]
-name = "gen-table-info"
-version = "0.1.0"
-dependencies = [
- "gen-table-info-derive",
-]
-
-[[package]]
 name = "gen-table-info-derive"
 version = "0.1.0"
 dependencies = [
